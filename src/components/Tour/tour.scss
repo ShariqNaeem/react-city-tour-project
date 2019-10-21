@@ -1,0 +1,64 @@
+@import "../../index.scss";
+
+.tour{
+    background: $mainGrey;
+    margin: 2rem 0;
+    img{
+        width: 100%;
+        display: block;
+        min-height: 13rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .tour{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-column-gap: 1rem
+    }
+}
+
+.image-container{
+    position: relative;
+}
+
+.close-btn{
+    display: block;
+    right: 5%;
+    top: 5%;
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $mainGreen;
+    opacity: 0;
+    transition: $mainTransition;
+}
+
+.image-container:hover .close-btn{
+    opacity: 0.8;
+}
+
+.info-container{
+    padding: 1rem 0.5rem;
+}
+
+h3{
+    text-transform: uppercase;
+    color: $mainGreen;
+}
+
+h4{
+    text-transform: capitalize;
+    margin: 0.2rem 0 0.6rem 0;
+}
+
+h5{
+    text-transform: capitalize;
+
+    span{
+        margin: 0.5rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: $mainGreen;
+    }
+}
